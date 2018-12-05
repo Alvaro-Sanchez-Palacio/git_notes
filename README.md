@@ -69,9 +69,10 @@ Clone allows for copying the content of a remote repository into a local reposit
 The command `clone` has two required parameters, two paths :
 1. Remote repository : Path to the remote repository, usually something like https://github.com/Alvaro-Sanchez-Palacio/git_notes.git.
 
-1. Local repository : Path to the folder to create the local copy of the remote repository.
-
-    $ git clone https://github.com/Alvaro-Sanchez-Palacio/git_notes.git .
+1. Local repository : Path to the folder to create the local copy of the remote repository (.).
+```
+$ git clone https://github.com/Alvaro-Sanchez-Palacio/git_notes.git .
+```
 
 _NB : Usually - Local repository - is dot (.) as it `clone` is invoked after navigating to the "target" folder._
 
