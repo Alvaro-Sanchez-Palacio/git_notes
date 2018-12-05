@@ -1,8 +1,6 @@
 # git_notes
 Compendium of basic git commands
 
----
-
 ## Global configurations ##
 
 List configurations :
@@ -11,8 +9,6 @@ List configurations :
 Most commonly used (required) are :
 * Set *username* : `$ git config --global user.name "Álvaro Sánchez Palacio"`
 * Set *email* : `$ git config --global user.email "alvaro.sanchez.palacio@gmail.com"`
-
----
 
 ## Basic commands ##
 
@@ -33,7 +29,7 @@ There are also a number of ways to refine the scope :
 
 _NB : Note the dot (.) making the difference for the __current__ directory._
 
-#### Removing files ####
+### Removing files ###
 You can remove files to the staging area using the `add` command : 
     
     $ git reset config.py
@@ -45,12 +41,12 @@ There are also a number of ways to refine the scope :
 
 _NB : Note the dot (.) making the difference for the __current__ directory._
 
-#### Commit files ####
+### Commit files ###
 Commit your changes from the staging area by using the `commit` command :
 
     $ git commit -m "Initial Commit"
 
-#### Accessing the log ####
+### Accessing the log ###
 Accessing the logs with `log` command will provide with information of the commmits.
 
     $ git log
@@ -67,7 +63,7 @@ Example :
     Author: Álvaro Sánchez Palacio <alvaro.sanchez.palacio@gmail.com>
     Date:   Wed Dec 5 00:57:20 2018 +0100
 
-#### Clone ####
+### Clone ###
 Clone allows for copying the content of a remote repository into a local repository.
 
 The command `clone` has two required parameters, two paths :
@@ -79,7 +75,11 @@ The command `clone` has two required parameters, two paths :
 
 _NB : Usually - Local repository - is dot (.) as it `clone` is invoked after navigating to the "target" folder._
 
----
+### Pull ###
+Downloads the latest version of the specified __reference__ of a remote __repository__ : `git pull <repository> <reference>`
+
+    $ git pull origin master
+
 
 ## Special features ##
 Ignore files :
@@ -91,8 +91,6 @@ Ignore files :
     `config.py`
     * the name of any folder on the document :
     `config/`
-
----
 
 ## Help! ##
 Get help using git `git <verb> --help` or `git help <verb>`. For example :
