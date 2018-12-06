@@ -1,5 +1,7 @@
 # git_notes
-Compendium of basic git commands
+Compendium of basic git commands.
+
+See more in the official documentation of GIT : https://git-scm.com/docs
 
 ## Global configurations ##
 
@@ -17,7 +19,7 @@ Most commonly used commands are :
 * Initialize GIT in a project : `$ git init`.
 * Obtain GIT status : `$ git status`.
 
-#### Adding files ####
+### Adding files ###
 You can add files to the staging area using the `add` command : 
     
     $ git add config.py
@@ -76,17 +78,57 @@ $ git clone https://github.com/Alvaro-Sanchez-Palacio/git_notes.git .
 
 _NB : Usually - Local repository - is dot (.) as it `clone` is invoked after navigating to the "target" folder._
 
+_See : [git-clone](https://git-scm.com/docs/git-clone)._
+
 ### Pull ###
 Downloads the latest version of the specified __reference__ of a remote __repository__ : `git pull <repository> <reference>`
 
     $ git pull origin master
 
+_See : [git-pull](https://git-scm.com/docs/git-pull)._
+
+### Push ###
+Uploads the commit to the specified __reference__ of a remote __repository__ : `git push <repository> <reference>`
+
+    $ git push origin master
+
+_See : [git-push](https://git-scm.com/docs/git-push)._
+
+### Branch ###
+Displays existing branches in the local and / or remote repository :
+
+    $ git branch -a
+
+_NB : `-a` is used to display also remote branchs._
+
+List of usefull commands :
+* See merged branches : 
+
+_See : [git-branch](https://git-scm.com/docs/git-branch)._
+
+### Checkout ###
+Swtiches from the current branch to the specified branch :
+
+    $ git checkout master
+
+_See : [git-checkout](https://git-scm.com/docs/git-checkout)._
+
+### Merge ###
+Merges specified branch with the current branch :
+
+    $ git merge calc-add
+
+As output of the `merge` command, GIT will expose the results occurred during the merge, or the conflicts found.
+
+_NB : merge command is usually invoked from the master in order to merge the activity in a certain branch, however it is possible to merge two different (non-master) branches as well._
+
+_See : [git-merge](https://git-scm.com/docs/git-merge)._
 
 ## Special features ##
 Ignore files :
 1. Create a .gitignore file :
     `$ touch .gitignore`
-
+    
 1. Add in the document : 
     * the name of any file on the document :
     `config.py`
