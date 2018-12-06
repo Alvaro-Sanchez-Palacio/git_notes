@@ -62,6 +62,11 @@ Commit your changes from the staging area by using the `commit` command :
 
     $ git commit -m "Initial Commit"
 
+In order to amend a message of a commit, you can simply re-commit with the `--amend` parameter :
+
+    $ git commit -m "Wrong message"
+    $ git commit --amend -m "Right message"
+
 ### Accessing the log ###
 Accessing the logs with `log` command will provide with information of the commmits.
 
