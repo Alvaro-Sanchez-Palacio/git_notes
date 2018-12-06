@@ -102,7 +102,9 @@ Displays existing branches in the local and / or remote repository :
 _NB : `-a` is used to display also remote branchs._
 
 List of usefull commands :
-* See merged branches : 
+* See merged branches : `$ git branch --merged`
+* Delete a local branch : `$ git branch -d doc`
+
 
 _See : [git-branch](https://git-scm.com/docs/git-branch)._
 
