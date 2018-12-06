@@ -123,9 +123,14 @@ List of usefull commands :
 _See : [git-branch](https://git-scm.com/docs/git-branch)._
 
 ### Checkout ###
-Swtiches from the current branch to the specified branch :
+Switches from the current branch to the specified branch :
 
     $ git checkout master
+
+Resets the specified document (not added) back to the state of the current branch for the las commited change.
+
+    $ git checkout calc.py
+
 
 _See : [git-checkout](https://git-scm.com/docs/git-checkout)._
 
