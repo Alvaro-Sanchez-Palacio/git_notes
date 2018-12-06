@@ -1,7 +1,21 @@
 # git_notes
 Compendium of basic git commands.
 
-See more in the official documentation of GIT : https://git-scm.com/docs
+The objective of this repository is to provide a basic ground or template to be used for training purposes on GIT management.
+
+Please, always address the official documentation of GIT : https://git-scm.com/docs.
+
+## Common workflow ##
+1. Clone a remote repository.
+1. Create a new branch for the new functionnality.
+1. Switch (checkout) to the new branch.
+1. Perform the desired changes to the code.
+1. Add changed files desired to be pushed.
+1. Commit the branch and / or changes (never forget to trace with message or tag).
+1. Pull from main to obtain changes performed by other members of the team
+1. (After validation) Merge new branch with main.
+1. Push the merged main.
+1. (Optional) Erase the local and remote branch.
 
 ## Global configurations ##
 
@@ -104,7 +118,7 @@ _NB : `-a` is used to display also remote branchs._
 List of usefull commands :
 * See merged branches : `$ git branch --merged`
 * Delete a local branch : `$ git branch -d doc`
-
+* Delete a remote branch : `$ git push origin --delete doc`
 
 _See : [git-branch](https://git-scm.com/docs/git-branch)._
 
