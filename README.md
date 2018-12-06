@@ -81,14 +81,14 @@ _NB : Usually - Local repository - is dot (.) as it `clone` is invoked after nav
 _See : [git-clone](https://git-scm.com/docs/git-clone)._
 
 ### Pull ###
-Downloads the latest version of the specified __reference__ of a remote __repository__ : `git pull <repository> <reference>`
+Downloads (`fetch`) and merges to current repository the master of the specified __repository__ and/or specified __reference__ : `git pull <repository> <reference>`
 
     $ git pull origin master
 
 _See : [git-pull](https://git-scm.com/docs/git-pull)._
 
 ### Push ###
-Uploads the commit to the specified __reference__ of a remote __repository__ : `git push <repository> <reference>`
+Uploads the commit of the specified __reference__ to a remote __repository__ : `git push <repository> <reference>`
 
     $ git push origin master
 
