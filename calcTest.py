@@ -8,8 +8,7 @@ class TestCalc(unittest.TestCase):
 
     def test_add(self):
         """
-        Test add() fonction.
-        
+        Test add() fonction.        
         """
         res = add(3,2)
         self.assertEqual(res, 5)
