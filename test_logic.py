@@ -14,6 +14,12 @@ class TestCalc(unittest.TestCase):
         res = add(3,2)
         self.assertEqual(res, 5)
 
+    def test_add_negatives(self):
+        """
+        Test add() function with negative inputs.
+        """
+        res = add(-3,-2)
+        self.assertEqual(res, -5)
 
     def test_subtract(self):
         """
