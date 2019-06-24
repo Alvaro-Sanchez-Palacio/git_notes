@@ -1,5 +1,5 @@
 import unittest
-from calc import add, subtract, multiply, divide, square
+from calc import add, subtract, multiply, divide, square, square_root
 
 class TestCalc(unittest.TestCase):
     """
@@ -40,6 +40,28 @@ class TestCalc(unittest.TestCase):
         """
         res = subtract(2,-1)
         self.assertEqual(res, 3)
+
+    def test_square_root_positive(self):
+        """
+        Test square_root() function with a positive input.
+        """
+        res = square_root(9)
+        self.assertEqual(res, 3.0)
+
+    def test_square_root_negative(self):
+        """
+        Test square_root() function with a negative input.
+        """
+        res = square_root(-9)
+        self.assertEqual(res, "ValueError: negative number cannot be raised to a fractional power.")
+
+    def test_square_root_0(self):
+        """
+        Test square_root() function with 0 as input.
+        """
+        res = square_root(0)
+        self.assertEqual(res, 0.0)
+
 
 if __name__ == '__main__':
     unittest.main()
