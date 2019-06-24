@@ -41,14 +41,5 @@ class TestCalc(unittest.TestCase):
         res = subtract(2,-1)
         self.assertEqual(res, 3)
 
-    def test_subtract_positive_and_negative(self):
-        """
-        Test subtract() function with a negative and a positive input.
-        """
-        res = subtract(-2, 1)
-        self.assertEqual(res, -3)
-
-
-
 if __name__ == '__main__':
     unittest.main()
