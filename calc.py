@@ -1,4 +1,3 @@
-
 def add(x, y):
     return x + y
 
@@ -17,3 +16,7 @@ def divide(x, y):
 
 def square(x, y):
     return x ** y
+
+
+def square_root(x):
+    return x**(.5)
