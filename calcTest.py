@@ -1,5 +1,5 @@
 import unittest
-from calc import add, subtract, multiply, divide, square, square_root
+from calc import add, subtract, multiply, divide, square, square_root, modulus
 
 class TestCalc(unittest.TestCase):
     """
@@ -40,6 +40,20 @@ class TestCalc(unittest.TestCase):
         """
         res = subtract(2,-1)
         self.assertEqual(res, 3)
+
+    def test_modulus_positives(self):
+        """
+        Test modulus() function with two positive numbers.
+        """
+        res = modulus(9, 3)
+        self.assertEqual(res, 0)
+    
+    def test_modulus_negatives(self):
+        """
+        Test modulus() function with two negative numbers.
+        """
+        res = modulus(-9, -3)
+        self.assertEqual(res, 0)
 
     def test_square_root_positive(self):
         """

@@ -18,6 +18,10 @@ def square(x, y):
     return x ** y
 
 
+def modulus(x, y):
+    return x % y
+  
+
 def square_root(x):
     if x >= 0:
         return x**(.5)
