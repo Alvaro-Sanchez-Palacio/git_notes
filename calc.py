@@ -19,4 +19,7 @@ def square(x, y):
 
 
 def square_root(x):
-    return x**(.5)
+    if x >= 0:
+        return x**(.5)
+    else:
+        return "ValueError: negative number cannot be raised to a fractional power."
