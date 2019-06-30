@@ -160,6 +160,36 @@ Ignore files :
     `config.py`
     * the name of any folder on the document :
     `config/`
+    * the pattern desired to be ignored :
+    `*.log`
+
+_NB : Blank lines and lines starting by # are ignored_
+_See GitHub list of recommended .gitignore : https://github.com/github/gitignore_ 
+
+Ignore patterns :
+1. `*` : Matches 0 to any number of characters.
+1. `[]` : Matches any characters inside the [ ].
+1. `?` : Matches any single characters.
+1. `[0-9]` : Matches any character between hyphen (-), 0 to 9 in this example.
+
+Some examples :
+    `# ignore all .a files
+    *.a
+
+    # but do track lib.a, even though you're ignoring .a files above
+    !lib.a
+
+    # only ignore the TODO file in the current directory, not subdir/TODO
+    /TODO
+
+    # ignore all files in any directory named build
+    build/
+
+    # ignore doc/notes.txt, but not doc/server/arch.txt
+    doc/*.txt
+
+    # ignore all .pdf files in the doc/ directory and any of its subdirectories
+    doc/**/*.pdf`
 
 ## Help! ##
 Get help using git `git <verb> --help` or `git help <verb>`. For example :
@@ -170,4 +200,4 @@ Or :
 ```
 $ git config --help
 ```
-_NB : Dependin on OS, GIT version and console, this command might provide the output in the console or open an HTML generated on the browser._
+_NB : Depending on OS, GIT version and console, this command might provide the output in the console or open an HTML generated on the browser._
