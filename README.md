@@ -139,6 +139,25 @@ Resets the specified document (not added) back to the state of the current branc
 
 _See : [git-checkout](https://git-scm.com/docs/git-checkout)._
 
+### Diff ###
+Compares differnt snapshots of the project.
+
+    $ git diff
+
+The comparation can be made specifically against the staged (cached) version using :
+
+    $ git diff --cached
+
+or
+
+    $ git diff --staged
+
+Diff can be launched using different tools, such as : 
+
+    $ git difftool --tool=vimdiff3
+
+_NB : To see the different options available : `$ git difftool --tool-help`_ 
+
 ### Merge ###
 Merges specified branch with the current branch :
 
@@ -163,8 +182,8 @@ Ignore files :
     * the pattern desired to be ignored :
     `*.log`
 
-_NB : Blank lines and lines starting by # are ignored_
-_See GitHub list of recommended .gitignore : https://github.com/github/gitignore_ 
+_NB : Blank lines and lines starting by # are ignored._
+_See GitHub list of recommended .gitignore : https://github.com/github/gitignore._ 
 
 Ignore patterns :
 1. `*` : Matches 0 to any number of characters.
