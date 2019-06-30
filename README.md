@@ -173,6 +173,7 @@ Ignore patterns :
 1. `[0-9]` : Matches any character between hyphen (-), 0 to 9 in this example.
 
 Some examples :
+
     # ignore all .a files
     *.a
 
