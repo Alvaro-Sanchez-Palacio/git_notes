@@ -173,7 +173,7 @@ Ignore patterns :
 1. `[0-9]` : Matches any character between hyphen (-), 0 to 9 in this example.
 
 Some examples :
-    `# ignore all .a files
+    # ignore all .a files
     *.a
 
     # but do track lib.a, even though you're ignoring .a files above
@@ -189,7 +189,7 @@ Some examples :
     doc/*.txt
 
     # ignore all .pdf files in the doc/ directory and any of its subdirectories
-    doc/**/*.pdf`
+    doc/**/*.pdf
 
 ## Help! ##
 Get help using git `git <verb> --help` or `git help <verb>`. For example :
