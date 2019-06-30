@@ -70,6 +70,9 @@ In order to amend a message of a commit, you can simply re-commit with the `--am
     $ git commit -m "Wrong message"
     $ git commit --amend -m "Right message"
 
+The default EDITOR can be used by simply : `$ git commit`.
+_NB : A nice addition is the option -v, which will show the details of the modifications in the tool._
+
 ### Accessing the log ###
 Accessing the logs with `log` command will provide with information of the commmits.
 
