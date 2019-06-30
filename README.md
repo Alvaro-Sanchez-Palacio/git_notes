@@ -25,6 +25,9 @@ List configurations :
 Most commonly used (required) are :
 * Set *username* : `$ git config --global user.name "Álvaro Sánchez Palacio"`
 * Set *email* : `$ git config --global user.email "alvaro.sanchez.palacio@gmail.com"`
+* Set EDITOR of choice : `git config --global core.editor "vim"`
+
+_See : https://git-scm.com/book/en/v2/Appendix-C:-Git-Commands-Setup-and-Config_
 
 ## Basic commands ##
 
