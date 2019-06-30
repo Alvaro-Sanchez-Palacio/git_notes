@@ -10,7 +10,7 @@ Please, always address the official documentation of GIT : https://git-scm.com/d
 1. Create a new branch for the new functionnality.
 1. Switch (checkout) to the new branch.
 1. Perform the desired changes to the code.
-1. Add changed files desired to be pushed.
+1. Add (stage) changed files desired to be pushed.
 1. Commit the branch and / or changes (never forget to trace with message or tag).
 1. Pull from main to obtain changes performed by other members of the team
 1. (After validation) Merge new branch with main.
